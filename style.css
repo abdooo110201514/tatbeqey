@@ -226,6 +226,7 @@ body {
 
 .stories {
     position: relative;
+    background-color: #dad3d3;
 }
 
 .stories .container {
@@ -241,14 +242,9 @@ body {
 .stories .container .body {
     margin-top: 300px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.stories .container .body .card {
-    width: 330px;
-    height: 350px;
-    text-align: center;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 }
 
 .stories .container .body a {
@@ -260,6 +256,7 @@ body {
     height: 50%;
     background-color: rgb(189, 187, 187);
     border-radius: 20px 20px 0 0;
+    margin: 0;
 }
 
 .stories .container .body .card .head img {
@@ -281,6 +278,32 @@ body {
 
 .stories .container.body .card h1 {
     color: gray;
+    margin: 0;
+    padding: 0;
 }
 
+.stories .container .body .books {
+    width: 300px;
+    height: 400px;
+}
+
+.stories .container .body .cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.stories .container .body .cards .card {
+    width: 250px;
+    margin: 10px;
+}
+
+.stories .container .body .cards .card .foot {
+    background-color: aliceblue;
+    margin: 0;
+    height: 150px;
+    border-radius:  0 0 20px 20px;
+}
 /* Ending Stories */
