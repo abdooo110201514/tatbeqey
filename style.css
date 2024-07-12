@@ -226,6 +226,10 @@ body {
 
 /* Starting stories */
 
+.stories {
+    position: relative;
+}
+
 .stories .container {
     display: flex;
     flex-direction: column;
@@ -272,6 +276,22 @@ body {
 
 .stories .container .header p {
     font-size: 25px;
+}
+
+.stories .container .body .card p {
+    color: gray;
+}
+
+.stories .container.body .card h1 {
+    color: gray;
+}
+
+.stories::before {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #6c6c6c;
+    opacity: 0.5;
 }
 
 /* Ending Stories */
