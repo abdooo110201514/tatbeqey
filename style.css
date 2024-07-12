@@ -227,6 +227,7 @@ body {
 .stories {
     position: relative;
     background-color: #dad3d3;
+    margin: 100px 0;
 }
 
 .stories .container {
@@ -245,6 +246,7 @@ body {
     flex-direction: row-reverse;
     flex-wrap: nowrap;
     justify-content: space-between;
+    position: relative;
 }
 
 .stories .container .body a {
@@ -284,7 +286,7 @@ body {
 
 .stories .container .body .books {
     width: 300px;
-    height: 400px;
+    height: 700px;
 }
 
 .stories .container .body .cards {
@@ -306,4 +308,16 @@ body {
     height: 150px;
     border-radius:  0 0 20px 20px;
 }
+
+.stories .container .body .books ::before {
+    content: "";
+    width: 30%;
+    height: 100%;
+    background-color: #bd0000;
+    opacity: 0.5;
+    position: absolute;
+    right: 0;
+
+}
+
 /* Ending Stories */
