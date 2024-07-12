@@ -227,7 +227,51 @@ body {
 /* Starting stories */
 
 .stories .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.stories .container .header {
     text-align: center;
+    
+}
+
+.stories .container .body {
+    margin-top: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.stories .container .body .card {
+    width: 330px;
+    height: 350px;
+    text-align: center;
+}
+
+.stories .container .body a {
+    text-decoration: none;
+    border-radius: 15px;
+}
+
+.stories .container .body .card .head {
+    height: 50%;
+    background-color: rgb(189, 187, 187);
+    border-radius: 20px 20px 0 0;
+}
+
+.stories .container .body .card .head img {
+    width: 180px;
+}
+
+.stories .container .header h1 {
+    font-size: 70px;
+    color: #676464;
+}
+
+.stories .container .header p {
+    font-size: 25px;
 }
 
 /* Ending Stories */
