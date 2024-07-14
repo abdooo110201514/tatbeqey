@@ -227,7 +227,7 @@ body {
 .stories {
     position: relative;
     background-color: #f0ebeb;
-    margin: 100px 0;
+    margin: 50px 0;
 }
 
 .stories .container {
@@ -309,7 +309,7 @@ body {
     border-radius:  0 0 20px 20px;
 }
 
-.stories .container .body .books ::before {
+.stories .container .books::before {
     content: "";
     width: 30%;
     height: 100%;
@@ -338,101 +338,88 @@ body {
 
 /* starting cotact */
 
-.head {
+.contact .container h1 {
     text-align: center;
-}
-
-.con {
-    width: 30%;
-    text-align: center;
-    position: absolute;
-    left: 0;
-}
-
-.contact .container .head h1 {
-    font-size: 80px;
-    color: #e1d9d9ea;
+    margin-bottom: 100px;
+    font-size: 70px;
+    color: #eeeeee;
 }
 
 .contact .container .body {
-    width: 100%;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
     flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    margin-bottom: 20px;
+    position: relative;
 }
 
 .contact .container .body .form {
-    width: 70%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
-    margin: 0;
-}
-
-.contact .container .body .form input, textarea {
-    padding: 20px;
-    border-radius: 15px;
-    font-size: 20px;
-    background-color: #ececec;
-    outline-color: var(--secondary-color);
-    transition: 1s;
+    width: 70%;
 }
 
 .contact .container .body .form .name, .Email {
     width: 350px;
-    height: 70px;
-    margin-bottom: 20px;
-    margin-left: 10px;
+    height: 40px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.contact .container .body .form .name {
+    margin-left: 0;
 }
 
 .contact .container .body .form .subject {
-    width: 100%;
-    height: 70px;
-    margin-bottom: 20px;
+    width: 725px;
+    height: 40px;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 .contact .container .body .form .message {
-    width: 100%;
-    height: 300px;
+    width: 725px;
+    height: 200px;
+    border-radius: 5px;
 }
 
-.contact .container .form :focus {
-    border: solid 2px #a43521;
-}
-
-.contact .container .form button {
-    width: 100%;
-    height: 50px;
-    border-radius: 12px;
-    border: none;
-    background-color: #fa694e;
-    bottom: 0;
-    margin-top: 20px;
-    transition: 0.7s;
-}
-
-.contact .container .form button:hover {
-    background-color: #bd0000;
+.contact .container .body .form input {
+    font-size: 15px;
+    outline-color: #bd0000;
 }
 
 .contact .container .body .con {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-right: 40px;
+    text-align: center;
+    
 }
 
-.contact .container .body .con .address, .email, .phone {
+.contact .container .body .con h2 {
+    font-size: 40px;
+    color: #eeeeee;
+}
+
+.contact button {
+    position: absolute;
+    bottom: -5px;
+    width: 725px;
+    height: 30px;
     margin: 10px;
-    padding: 10px;
-    letter-spacing: 1px;
+    background-color: #bd0000;
+    border: 0;
+    transition: 0.7s;
+    border-radius: 2px;
+    font-size: 20px;
 }
 
-.contact .container .body .con .address, .email, .phone h1 {
-    font-size: 15px;
-    color: #292828;
+.contact button {
+    margin-left: 0;
+}
+
+.contact button:hover {
+    background-color: #cd3e25;
+    border-radius: 5px;
 }
 
 /* ending contact */
@@ -447,6 +434,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .footer .container h1 {
@@ -456,6 +444,7 @@ body {
 .footer i {
     font-size: 30px;
     padding: 5px;
+    color: gray;
 }
 
 /* Ending footer */
